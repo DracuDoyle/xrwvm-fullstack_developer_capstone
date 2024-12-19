@@ -29,7 +29,7 @@ class CarMake( models.Model ):
 class CarModel( models.Model ):
     
     car_make = models.ForeignKey( CarMake, on_delete = models.CASCADE, related_name = 'car_models' )
-    dealer_id = models.IntegerField()
+    dealer_id = models.IntegerField(blank=True, null=True)
     name = models.CharField( max_length = 100 )
 
     CAR_TYPES = [
