@@ -1,68 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <title>About Us - Best Cars Dealership</title>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
+    </nav>
     
-</div>
+    <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+      <div class="banner" name="about-header">
+        <h1>About Us</h1>
+        Welcome to Best Cars dealership, home to the best cars in North America. We deal in the sale of domestic and imported cars at reasonable prices.
+      </div>
+      <div style="display: flex; flex-direction: row; margin: auto;">
+        <div class="card" style="width: 30%; margin: 10px;">
+          <img class="card-img-top" src="/static/emma.png" alt="Card image">
+          <div class="card-body">
+            <p class="title"><strong>Emma Rodriguez</strong></p>
+            <p><em>General Manager</em></p>
+            <p class="card-text">Emma has over 15 years of experience in the automotive industry, leading teams to success and ensuring customer satisfaction.</p>
+            <p><a href="mailto:emma.rodriguez@bestcars.com">emma.rodriguez@bestcars.com</a></p>
+          </div>
+        </div>
 
+        <div class="card" style="width: 30%; margin: 10px;">
+          <img class="card-img-top" src="/static/carlos.png" alt="Card image">
+          <div class="card-body">
+            <p class="title"><strong>Carlos Martinez</strong></p>
+            <p><em>Sales Manager</em></p>
+            <p class="card-text">Carlos oversees the sales team and creates strategies to meet and exceed sales targets. He is passionate about helping customers find their perfect car.</p>
+            <p><a href="mailto:carlos.martinez@bestcars.com">carlos.martinez@bestcars.com</a></p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 30%; margin: 10px;">
+          <img class="card-img-top" src="/static/sofia.png" alt="Card image">
+          <div class="card-body">
+            <p class="title"><strong>Sofia Gomez</strong></p>
+            <p><em>Customer Service Manager</em></p>
+            <p class="card-text">Sofia leads the customer service department, ensuring every buyer has an exceptional experience. She is known for her empathetic approach and technical expertise.</p>
+            <p><a href="mailto:sofia.gomez@bestcars.com">sofia.gomez@bestcars.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
