@@ -1,4 +1,3 @@
-from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
@@ -13,6 +12,7 @@ from .restapis import get_request, analyze_review_sentiments, post_review
 logger = logging.getLogger(__name__)
 
 # Create your views here.
+
 
 @csrf_exempt
 def login_user(request):
@@ -100,7 +100,7 @@ def get_dealer_reviews(request, dealer_id):
                 review_detail['review']
             )
             review_detail['sentiment'] = sentiment_response.get(
-                'sentiment','unknown'
+                'sentiment', 'unknown'
             )
         return JsonResponse({"status": 200, "reviews": reviews})
     return JsonResponse({"status": 400, "message": "Bad Request"})
